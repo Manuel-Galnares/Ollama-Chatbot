@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuración de variables de entorno
-os.environ['LANCHAIN_API_KEY'] = "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"
+os.environ['LANCHAIN_API_KEY'] = ""
 os.environ['LANGCHAIN_TRACING_V2'] = "true"
 os.environ['LANGCHAIN_PROJECT'] = "pr-IntroductionLangChain"
 
@@ -145,4 +145,5 @@ if user_input:
 # Botón para reiniciar la conversación
 if st.button("Reiniciar conversación"):
     st.session_state.messages = []
+
     st.experimental_rerun()
